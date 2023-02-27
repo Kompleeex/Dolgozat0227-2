@@ -1,7 +1,5 @@
 package Model;
 
-
-
 public class Ember {
     private String nev;
     private int kor;
@@ -21,11 +19,10 @@ public class Ember {
         this.nev =s[0];
         this.kor =Integer.parseInt(s[1]);
         this.neme = s[2];
+        if(sor.length() == 4){
         this.MunkToltEV =Integer.parseInt(s[3]);
+        }
     }
-    
-
-    
 
     public String getNev() {
         return nev;

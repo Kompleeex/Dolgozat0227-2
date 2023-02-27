@@ -9,18 +9,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Sor {
-        public void fajlbeolvasas() throws IOException{
-        String fn = "Dolgozat.txt";
+    public static void main(String[] args) throws IOException {
+        String fn = "Doga.txt";
         Path path = Paths.get(fn);
         List<String> sorok = Files.readAllLines(path);
+        System.out.println("sorok szama: " + sorok.size());
         
         String fejlec = sorok.get(0);
         sorok.remove(0);
         
         List<Ember> emberek = new ArrayList<>();
         for (String sor : sorok) {
-            emberek.add(new Ember(sor, ":"));
+            emberek.add(new Ember(sor, ";"));
         }
-        
+        System.out.println("emberek lista adatainak a szama: " + emberek.size());
     }
 }

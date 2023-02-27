@@ -1,6 +1,6 @@
 NEV;KOR;NEME;MunkaTolEV
-Peter;21; F
-Pál;18; F
+Peter;21;F
+Pál;18;F
 Petra;22;L;2
 Éva;33;L;5
 Róbert;26;F;8
